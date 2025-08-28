@@ -307,3 +307,121 @@ top: 33px;
     margin-top: 22px;
 
 }
+
+/* ================= Responsive Design ================= */
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    ul {
+        margin: 10px 0;
+    }
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main .mainText {
+        margin-top: 60px;
+    }
+    .card {
+        flex-wrap: wrap;
+    }
+    .blog {
+        width: 90%;
+        height: auto;
+    }
+    .contactMe {
+        flex-direction: column;
+        width: 90%;
+        margin: 5% auto;
+    }
+    .contactMe img {
+        width: 100%;
+    }
+    .contactText {
+        width: 100%;
+        padding: 15px;
+    }
+    .me {
+        flex-direction: column;
+        width: 90%;
+        margin: 5% auto;
+    }
+    .me img {
+        width: 100%;
+    }
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+    nav .logo {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    ul li a {
+        margin-inline: 10px;
+        font-size: 16px;
+    }
+    .mainText h1 {
+        font-size: 36px;
+    }
+    .mainText button {
+        width: 120px;
+        height: 36px;
+        font-size: 18px;
+    }
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card .crd {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .blog {
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        height: auto;
+    }
+    .letter {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .inp {
+        flex-direction: column;
+        width: 100%;
+    }
+    .inp input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .inp button {
+        width: 100%;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer .footerText {
+        margin: 15px 0;
+    }
+    .form input,
+    .form button {
+        width: 90%;
+    }
+    .cartText .btn button,
+    .cartText .back {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
