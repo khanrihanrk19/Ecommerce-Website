@@ -21,12 +21,10 @@
             <ul>
                 <li>
                     <a id="home" onclick="homes()">Home</a>
-                    <a id="shop" onclick="shops()">Shops</a>
-                    <a id="blog" onclick="blogs()">Blog</a>
-                    <a id="about" onclick="abouts()">About</a>
-                    <a id="contact" onclick="contacts()">Contact</a>
-        
-
+                    <a href="#womensFashion" onclick="shops()">Shop</a>
+                    <a href="#blog" onclick="blogs()">Blog</a>
+                    <a href="#about" onclick="abouts()">About</a>
+                    <a href="#contact" onclick="contacts()">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -38,262 +36,424 @@
                 <h2>ReviewVine</h2>
                 <h1 class="top">Super Value Deals</h1>
                 <h1>On All Products</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi</p>
-                <button>Explore</button>
+                <p>Discover trending products with unbeatable discounts and trusted <br>recommendations.</p>
+                <button onclick="scrollToSection('electronics')">Explore</button>
             </div>
             <img src="m3.png" alt="">
         </div>
 
-        <!-- cards -->
+        <!-- Women's Fashion -->
+        <div class="trend" id="womensFashion">
+            <div class="head">
+                <h1><span>Women's Fashion</span></h1>
+            </div>
+            <div class="card">
+
+                <div class="crd">
+                    <img src="wn7.webp" alt="Women's Shirt Dress" onclick="showProduct('wn7.webp','Women\'s Shirt Dress','<h1>$565.00</h1>',
+           'The SEA Marja Embroidery Shirt Dress features a laid-back yet refined silhouette with a straight cut and collared neckline. Made from a comfortable linen (55%) and viscose (45%) blend, it showcases intricate eyelet embroidery that adds a delicate, feminine touch. Functional details include a full-length button placket and on-seam side pockets. Designed to fit true to size, this midi dress is ideal for effortless styling—pair it with sandals and a tote for a chic daytime look.',
+           'https://amzn.to/4p94hkk')">
+
+                    <div class="crdText">
+                        <h2>Women's Shirt Dress</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i> <br>
+                        <p>
+                        <h2>$565.00</h2>
+                        <a href="https://amzn.to/4p94hkk" target="_blank" rel="nofollow sponsored noopener noreferrer">
+                            <button>Buy Now</button></a>
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="crd">
+                    <img src="wn8.webp" alt="Women's Jaxsyn Dress" onclick="showProduct('wn8.webp','Women\'s Jaxsyn Dress',
+           '<h1>$249.00</h1>',
+           'The PAIGE Jaxsyn Dress blends utility-inspired design with effortless style. Featuring cap sleeves, front button closure, and multiple pockets, it offers both function and fashion. Crafted from a soft stretch twill and tailored for comfort, this versatile mini dress pairs perfectly with sneakers for casual days or sandals for chic evenings.',
+           'https://amzn.to/4gboHoP')">
+                    <div class="crdText">
+                        <h2>Women's Jaxsyn Dress</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><br>
+                        <p>
+                        <h2>$249.00</h2>
+                        <a href="https://amzn.to/4gboHoP" target="_blank" rel="nofollow sponsored noopener noreferrer">
+                            <button>Buy Now</button></a>
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="crd">
+                    <img src="wn9.webp" alt="Women's Biker Jacket"
+                        onclick="showProduct('wn9.webp', 'Women\'s Biker Jacket', '<h1>$1078.76</h1>', 'The Women’s Vintage Coat offers a loose, stylish design for comfort and freedom of movement. Crafted with fine workmanship, it features a warm, windproof build, stand-up collar or lapel, and metal button sleeve details. A perfect blend of elegance and casual fashion, it enhances any outfit with timeless appeal.', 'https://amzn.to/4mIHlXE')">
+                    <div class="crdText">
+                        <h2>Women's Biker Jacket</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i> <br>
+                        <p>
+                        <h2>$1078.76</h2>
+                        <a href="https://amzn.to/4mIHlXE" target="_blank" rel="nofollow sponsored noopener noreferrer">
+                            <button>Buy Now</button></a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Men's fashion -->
 
         <div class="trend">
             <div class="head">
-                <h1><span>Men's Wear</span></h1>
+                <h1><span>Men's Fashion</span></h1>
             </div>
             <div class="card">
+                <!-- Men's Fashion crd-1-->
                 <div class="crd">
-                    <img src="srt1.webp" alt="" onclick="show(this)">
+                    <img src="wn10.webp" alt="Men's Blinders Suit" onclick="showProduct('wn10.webp','Men\'s Blinders Suit','<h1>$229.99</h1>',
+           'Sharp, sleek and sophisticated, look the part with this premium 3 piece tweed suit, that features a tailored fit cut, with a closer fit across the chest and tailored trousers. Crafted from 50% wool and 50% polyester, the two-button jacket hangs beautifully and has a half canvas construction that moulds to your body shape the more you wear it. The suit features flap pockets, buttoned cuffs and single back vents lend the suit a classic touch of refinement. A matching double breasted waistcoat completes the 3-piece with a 3-button down style with classic tailored pockets and a back adjuster to ensure you can create your ideal fit. The suit is evergreen and contemporary at the same time and allowing you to look the best all day. Pair it with a white shirt, tie and shoes for a dapper finish',
+           'https://amzn.to/465ckpB')">
                     <div class="crdText">
-                        <h2>Cutton Trending Shirt's</h2>
+                        <h2>Men's Blinders Suit</h2>
                         <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> <br>
+                        <h2>$229.99</h2>
+                        <p>
+                            <a href="https://amzn.to/465ckpB" target="_blank"
+                                rel="nofollow sponsored noopener noreferrer">
+                                <button>Buy Now</button></a>
+
+                        </p>
+
+                    </div>
+                </div>
+                <!-- Men's Fashion crd-2-->
+                <div class="crd">
+                    <img src="wn11.webp" alt="Rolex Men's Watch" onclick="showProduct('wn11.webp','Rolex Men\'s Watch','<h1>$17,550.00</h1>',
+           'The Rolex Oyster Perpetual GMT-Master II 116710BLNR, known as the “Batman,” is one of the most iconic luxury sports watches. Featuring a striking blue and black Cerachrom ceramic bezel, it allows tracking of two time zones simultaneously, making it ideal for travelers. Crafted in durable Oystersteel with a 40mm case, it combines strength with timeless elegance. Powered by the Rolex Caliber 3186 automatic movement, it ensures precision and reliability. The signature Oyster bracelet enhances comfort and style, suitable for both casual and formal wear. Highly sought after, the GMT-Master II 116710BLNR is a true symbol of prestige and innovation.',
+           'https://amzn.to/469mt4K')">
+                    <div class="crdText">
+                        <h2>Rolex Men's Watch </h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> <br>
+                        <h2>$17,550.00</h2>
+                        <p>
+                            <a href="https://amzn.to/469mt4K" target="_blank"
+                                rel="nofollow sponsored noopener noreferrer">
+                                <button>Buy Now</button></a>
+
+                        </p>
+                    </div>
+                </div>
+                <!-- Men's Fashion crd-3-->
+                <div class="crd">
+                    <img src="wn12.webp" alt="Adidas Running Shoes" onclick="showProduct('wn12.webp','Adidas Running Shoes','<h1>$702.83</h1>',
+           'Adidas Running Shoes are designed for comfort, speed, and performance, making them a favorite choice for athletes and casual runners alike. Built with advanced technologies like Boost cushioning for energy return, Lightstrike midsoles for lightweight support, and Primeknit uppers for a breathable, adaptive fit, these shoes provide excellent stability and responsiveness. The durable outsoles ensure superior grip on various surfaces, while the sleek designs suit both running and everyday wear. Adidas offers a wide range of models to fit different running styles, from long-distance training to high-speed sprints. Stylish, reliable, and innovative, Adidas Running Shoes inspire every stride.',
+           'https://amzn.to/4mL47y3')">
+                    <div class="crdText">
+                        <h2>Adidas Running Shoes</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> <br>
+                        <h2>$702.83</h2>
+                        <p>
+                            <a href="https://amzn.to/4mL47y3" target="_blank"
+                                rel="nofollow sponsored noopener noreferrer">
+                                <button>Buy Now</button></a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- elcetric -->
+
+        <div class="trend" id="electronics">
+            <div class="head">
+                <h1><span>Electronic's Products</span></h1>
+            </div>
+            <div class="card">
+                <!-- elcetric crd-1-->
+                <div class="crd">
+                    <img src="wn1.webp" alt="Adidas Running Shoes" onclick="showProduct('wn1.webp','Adidas Running Shoes','<h1>$702.83</h1>',
+           'ULTIMATE OVER-EAR LISTENING EXPERIENCE — Apple-designed dynamic driver provides high-fidelity audio. Computational audio combines custom acoustic design with the Apple H1 chip and software for breakthrough listening experiences. FIVE FRESH COLORS — AirPods Max come in five fresh colors: Midnight, Starlight, Blue, Purple, and Orange. A color-matched Smart Case is also included. FOCUS ON WHAT’S PLAYING — Pro-level Active Noise Cancellation removes up to 2x more background noise, so you can immerse yourself in music.* HEAR THE WORLD AROUND YOU — Transparency mode lets you comfortably hear and interact with the world around you. PERSONALIZED SPATIAL AUDIO — With sound that suits your unique ear shape along with dynamic head tracking, AirPods Max deliver an immersive listening experience that places sound all around you.* You can also listen to select songs, shows, and movies in Dolby Atmos.',
+           'https://amzn.to/4mL47y3')">
+                    <div class="crdText">
+                        <h2>Apple Headphones</h2>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i> <br>
-                        <button>Buy Now</button>
-                    </div>
-                 </div>
+                        <h2>$489.48</h2>
 
-                 <div class="crd">
-                    <img src="srt2.webp" alt="" onclick="show(this)">
+                        <p>
+                            <a href="https://amzn.to/3VwGFsk" target="_blank"
+                                rel="nofollow sponsored noopener noreferrer">
+                                <button>Buy Now</button></a>
+
+                        </p>
+                    </div>
+                </div>
+
+                <!-- elcetric crd-2-->
+                <div class="crd">
+                    <img src="wn13.webp" alt="AORUS Gaming Laptop" onclick="showProduct('wn13.webp','AORUS Gaming Laptop','<h1>$2,349.99</h1>',
+           'GIGABYTE GiMATE as Your Smart AI Mate – Introducing GiMATE, your smart AI Mate that transforms how you interact with technology. GiMATE creates an intelligent interface that truly understands your needs. Control is now more intuitive, more intelligent, and more personal. Intel Core Ultra 9 275HX Series Processor – AORUS MASTER 16 is powered by the latest Intel Core Ultra 9 275HX processor that provides desktop-tier gaming performance on the go with extra overclocking headrooms. The new-generation NPU can handle longer-running AI workloads at superior power efficiency.',
+           'https://amzn.to/3K92I5V')">
                     <div class="crdText">
-                        <h2>Cutton Trending Shirt's</h2>
+                        <h2> AORUS Gaming Laptop </h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i> <br>
+                        <h2> $2,349.99</h2>
+                        <p>
+                            <a href="https://amzn.to/3K92I5V" target="_blank"
+                                rel="nofollow sponsored noopener noreferrer">
+                                <button>Buy Now</button></a>
+
+                        </p>
+                    </div>
+                </div>
+                <!-- elcetric crd-3-->
+                <div class="crd">
+                    <img src="wn14.webp" alt="OnePlus Nord N30 5G" onclick="showProduct('wn14.webp','OnePlus Nord N30 5G','<h1>$299.99</h1>',
+           '108MP Triple Camera with 3x Lossless Zoom and Electronic Image Stabilisation (EIS) - titanic main camera that captures clear, high-detail photos with 9-in-1 pixel binning tech that absorbs more light for brighter, more colorful images. Qualcomm Snapdragon 695 Chipset - With up to 8GB of expandable virtual RAM that will have you swiping and switching between apps at blistering speed. OxygenOS 13.1 - Fast and Smooth experience and incredible features including Quick Start and Gaming Tools, with Game Focus Mode and improved app optimisation. 5G Enabled Dual-SIM - The OnePlus Nord N30 is the perfect entry-level 5G phone, featuring premium specs and an affordable price. *5G compatible with T-mobile, Google Fi, Mint Mobile, Metro by TMO, Simple Mobile. 5G available in selected areas, please check with your carrier. (Dual-SIM is SIM & SIM/MicroSD)',
+           'https://amzn.to/47VbbDF')">
+                    <div class="crdText">
+                        <h2>OnePlus Nord N30 5G</h2>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i> <br>
-                        <button>Buy Now</button>
-                    </div>
-                 </div>
-                    <div class="crd">
-                        <img src="srt6.webp" alt="" onclick="show(this)">
-                        <div class="crdText">
-                            <h2>Cutton Trending Shirt's</h2>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i> <br>
-                            <button>Buy Now</button>
-                        </div>
+                        <h2>$299.99</h2>
+                        <p>
+                            <a href="https://amzn.to/47VbbDF" target="_blank"
+                                rel="nofollow sponsored noopener noreferrer">
+                                <button>Buy Now</button></a>
+
+                        </p>
                     </div>
                 </div>
             </div>
+        </div>
 
-                <!-- Women Card -->
+        <!-- Kitchen Card -->
 
-                <div class="trend" id="trendSec">
-                    <div class="head">
-                        <h1><span>Women's Wear</span></h1>
+        <div class="trend" id="trendSec">
+            <div class="head">
+                <h1><span>Kitchen's Products</span></h1>
+            </div>
+            <div class="card">
+                <!-- Kitchen Crd-1 -->
+                <div class="crd">
+                    <img src="wn4.webp" alt="Stainless Steel Fry Pan" onclick="showProduct('wn4.webp','Stainless Steel Fry Pan','<h1>$139.95</h1>',
+           ' Fast and Even Heat - D3 tri-ply is fully bonded to the rim for professional performance & durability. The high quality 18/10 stainless steel surface sears to perfection and is ideal to deglaze for pan sauces. Design You Will Love - D3 has a professionally polished stainless steel finish. Our classic, double riveted stainless steel handles ensure a secure grip. Bonded, Engineered, & Assembled in Canonsburg, PA - USA Since 1971.',
+           'https://amzn.to/3Vvs2Wb')">
+                    <div class="crdText">
+                        <h2>Stainless Steel Fry Pan </h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i> <br>
+                        <h2>$139.95</h2>
+                        <p>
+                            <a href="https://amzn.to/3Vvs2Wb" target="_blank"
+                                rel="nofollow sponsored noopener noreferrer">
+                                <button>Buy Now</button></a>
+
+                        </p>
                     </div>
-                    <div class="card">
-                        <div class="crd">
-                            <img src="wn4.webp" alt="" onclick="show(this)">
-                            <div class="crdText">
-                                <h2>Trending Girl Top's</h2>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i> <br>
-                            <button>Buy Now</button>
-                            </div>
-                        </div>
+                </div>
+                <!-- Kitchen Crd-2 -->
+                <div class="crd">
+                    <img src="wn5.webp" alt="Frying Pans Set" onclick="showProduct('wn5.webp','Frying Pans Set','<h1>$702.83</h1>',
+           'CONVENIENT STACKING: Nesting cookware helps keep your kitchen organized and accessible. With this convenient system, pots, pans, and even lids easily stack to take up 55% less cabinet space (vs. individually storing). SAFE STORAGE: Unique anti-scratch nesting design protects pots and pans during storage by suspending them with specially-designed stacking handles. COMFORTABLE HANDLES: Cast stainless steel handles are ergonomically designed for comfort and double-riveted for strength and maneuverability. Longer pan handles stay cool on the stovetop for safe cooking. STOVETOP-TO-OVEN: Pots and pans are both oven safe up to 500°F, so you can bake like cast iron. Lids are oven safe up to 400°F.',
+           'https://amzn.to/4g7RKK4')">
+                    <div class="crdText">
+                        <h2>Frying Pans Set</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i> <br>
+                        <h2>$349.99</h2>
+                        <p>
+                            <a href="https://amzn.to/4g7RKK4" target="_blank"
+                                rel="nofollow sponsored noopener noreferrer">
+                                <button>Buy Now</button></a>
 
-                        <div class="crd">
-                            <img src="wn5.webp" alt="" onclick="show(this)">
-                            <div class="crdText">
-                                <h2>Trending Girl Top's</h2>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i> <br>
-                            <button>Buy Now</button>
-                            </div>
-                        </div>
+                        </p>
+                    </div>
+                </div>
+                <!-- Kitchen Crd-3 -->
+                <div class="crd">
+                    <img src="wn6.webp" alt="Bosch 300 Series" onclick="showProduct('wn6.webp','Bosch 300 Series','<h1>$899.00</h1>',
+           'The Bosch 300 Series Fully Automatic Espresso and Coffee Machine in elegant silver is designed to bring professional-quality coffee and espresso directly into your home. With its modern design, intuitive functionality, and advanced features, this machine makes brewing your favorite drinks effortless and enjoyable. Equipped with an integrated in-cup frother, it delivers perfectly textured milk foam straight into your cup, ideal for cappuccinos, lattes, and macchiatos. Thanks to the OneTouch Milk Drink function, preparing milk-based beverages is quick and convenient with just the press of a button. You can choose from five customizable drink options, ensuring that every family member can enjoy their preferred coffee style, whether it’s a bold espresso, a creamy latte, or a smooth regular coffee. The machine features a high-quality ceramic grinder, engineered for durability and consistency. This ensures your coffee beans are ground precisely for maximum flavor extraction, delivering a rich and aromatic cup every time. Unlike metal grinders, ceramic construction reduces heat build-up, preserving the natural oils and flavors of the beans.',
+           'https://amzn.to/47nRxA9')">
+                    <div class="crdText">
+                        <h2>Bosch 300 Series</h2>
 
-                        <div class="crd">
-                            <img src="wn6.webp" alt="" onclick="show(this)">
-                            <div class="crdText">
-                                <h2>Trending Girl Top's</h2>
-                                
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i> <br>
-                            <button>Buy Now</button>
-                            </div>
-                        </div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i> <br>
+                        <h2>$899.00</h2>
+                        <p>
+                            <a href="https://amzn.to/47nRxA9" target="_blank"
+                                rel="nofollow sponsored noopener noreferrer">
+                                <button>Buy Now</button></a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blogs -->
+
+        <div class="trends" id="blog">
+            <div class="head">
+                <h1><span>Blogs</span></h1>
+            </div>
+            <div class="cardb">
+                <div class="blog">
+                    <img src="tr1.webp" alt="">
+                    <div class="blogText">
+                        <h2>Trending Product's</h2>
+                        <p>Trending products are innovative, stylish, and in high demand, capturing attention with
+                            unique features and practical benefits. They combine quality, design, and functionality to
+                            fit modern lifestyles, making them popular choices for consumers. From fashion and tech to
+                            home essentials, trending products set new standards and inspire everyday living.
+                        </p>
+                        <button onclick="showProduct('Bl2.webp','Womens 3 Piece Lounge Sets ','<h1>$77.99</h1>',
+       'Fabric type: This 3 piece lounge sets for women are mainly made of polyester + spandex, skin-friendly, breathable, soft and comfortable, this 3 piece outfits make you feel comfy all day long. Features: Lounge sets for women / 3 piece outfits for women / womens pajama sets / sweatsuits for women set / tracksuit for women set / womens sleepwear / open front long cardigan / long sleeve shirts/bodycon top / elastic high waist with wide full-length pants / relaxed fit style. Perfectly go well with your figure and looks wonderfully feminine',
+       'https://amzn.to/427hz7p')">Read More</button>
+
+
                     </div>
                 </div>
 
+                <div class="blog">
+                    <img src="tr3.webp" alt="">
+                    <div class="blogText">
+                        <h2>Trending Product's</h2>
+                        <p>
+                            Discover trending men’s products designed for style, performance, and everyday comfort.
+                            From
+                            fashionable apparel and premium watches to advanced grooming tools and smart accessories,
+                            each item blends innovation with elegance. Perfect for modern lifestyles, these essentials
+                            keep men confident, stylish, and on trend.</p>
+                        <button onclick="showProduct('Bl1.webp','Babioboa Mens 2 Piece ','<h2>$42.99</h2>',
+           'Material:Made with high-quality fabric for a lived in feel the men’s pants and hoodie set features Soft warmth Stretchy allowing flexible movement through the torso and arms.This hoodie Pantsuit is made for comfort through full day of sport and casual.Design: Men casual hoodie shirt set have unique woven pattern design, which is a perfect blend of style and functionality. Available in a range of colors including Khaki Grey Brown and Black it caters to your diverse style needs.',
+           'https://amzn.to/4gia3w3')">Read More</button>
 
-                <!-- about us -->
-
-                <div class="about">
-
-                    <div class="aboutus">
-                        <h1>#KnowUs</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-
-                    <div class="me">
-                        <img src="lap.png" alt="">
-                        <div class="aboutText">
-                            <h1>Who we are ?</h1>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing Dolorum corrupti consequuntur sunt ipsam aperiam vel magni sequi eos sit amet consectetur adipisicing Dolorum corrupti consequuntur sunt ipsam aperiam vel magni sequi eos atque nam maxime dolorem fuga, rem eum iure quidem! Illo corporis, asperiores ipsum excepturi voluptates necessitatibus consectetur odit omnis hic praesentium autem, officiis dignissimos assumenda saepe.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- contact -->
-
-                <div class="contact">
-
-                    <div class="contactus">
-                        <h1>#Let's Connect</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-
-                    <div class="contactMe">
-                        <div class="contactText">
-                            <h1>Visit Our Office or Contact <br>
-                                Us Today</h1>
-                            <p>Address : Kalindi Kunj New Delhi Pin-110076</p>
-                            <p>Contact : khanrihanrk19@gmail.com</p>
-                            <p>Number : 7300630583</p>
-                        </div>
-                        <img src="map.PNG" alt="">
-                    </div>
-
-                    <div class="form">
-                        <h1>Connect with Us. Fill Form</h1>
-                        <input type="text" placeholder="Enter Email"> <br>
-                        <input type="text" placeholder="Enter Email"> <br>
-                        <input type="text" placeholder="Enter Email"> <br>
-                        <input type="text" placeholder="Enter Email"> <br>
-                        <input type="text" placeholder="Enter Email"> <br>
-                        <button>Submit</button>
-
-                    </div>
-                </div>
-                 <!-- cart -->
-
-                 <div class="cart">
-                    <img id="newImg" src="" alt="">
-                    <div class="cartText">
-                        <h1>Trends Offer : Trending Shop <br>
-                            Now</h1>
-                            <h2>Special Price</h2>
-                            <h2>$11</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                           <div class="btn">
-                            <button>Buy Now</button>
-                            <button onclick="addCart()">Add to Cart</button>
-                           </div>
-                           <button  class="back">Back</button>
-
-
-
-                    </div>
-                 </div>
-
-                <!-- blogs -->
-                <div class="trends">
-                    <div class="head">
-                        <h1><span>Men's Wear</span></h1>
-                    </div>
-                    <div class="card">
-                        <div class="blog">
-                            <img src="tr1.webp" alt="">
-                            <div class="blogText">
-                                <h2>Trending Girl Cloths</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, animi expedita?</p>
-                                <a href="">Read More</a>
-                            </div>
-                        </div>
-
-                        <div class="blog">
-                            <img src="tr3.webp" alt="">
-                            <div class="blogText">
-                                <h2>Trending Boys Cloths</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, animi expedita?</p>
-                                <a href="">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Letter -->
-
-                <div class="letter">
-                    <div class="letterText">
-                        <h1>Sign Up for NewsLetter</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="inp">
-                        <input type="text" placeholder="Enter Email">
-                        <button>Sign Up</button>
-                    </div>
-                </div>
-
-                <!-- Footer -->
-
-                <div class="footer">
-                    <div class="footerText">
-                        <h2>Trends</h2>
-                        <p>Service </p>
-                        <p>Customer</p>
-                        <p>Satisfaction</p>
-                        <p></p>
-
-                    </div>
-                    <div class="footerText">
-                        <h2>About US</h2>
-                        <p>Adrress : Kalindi Kunj New Delhi Pin-110076</p>
-                            
-                            
-                        <p>Service</p>
-                        <p>Customer</p>
-                        <p>Satisfation</p>
-
-                    </div>
-                    <div class="footerText">
-                        <h2>Contect</h2>
-                        <p>7300630583</p>
-                        <p>Customer</p>
-                        <p>Comming up</p>
-                        <p>New Arrival</p>
-
-                    </div>
-                    <div class="footerText">
-                        <h2>Trending</h2>
-                        <p>Service</p>
-                        <p>Customer</p>
-                        <p>Shops</p>
-                        <p></p>
 
                     </div>
                 </div>
             </div>
-            <script src="script.js"></script>
+        </div>
+
+        <!-- product popup click -->
+
+        <div id="productDetailBox" class="product-detail-box">
+            <span class="close-btn" onclick="closeProduct()">×</span>
+            <img id="detailImg" alt="Product Image">
+            <h1 id="detailTitle"></h1>
+            <p id="detailShortDesc"></p>
+            <div id="detailFullDesc"></div>
+            <a id="detailLink" target="_blank">
+                <button>Shop Now</button>
+            </a>
+        </div>
+
+        <!-- about -->
+
+        <div class="about" id="about">
+
+            <div class="aboutus">
+                <h1>#KnowUs</h1>
+                <p>We bring you the latest trends, trusted brands, and smart shopping guides to help you find products
+                    that truly add value to your lifestyle.</p>
+            </div>
+
+            <div class="me">
+                <img src="lap.png" alt="">
+                <div class="aboutText">
+                    <h1>Who we are ?</h1>
+                    <p>We are passionate about simplifying your shopping journey. Our goal is to connect you with
+                        genuine, high-quality products through carefully selected affiliate links. From everyday
+                        essentials to trending must-haves, we curate recommendations you can trust—so you can shop
+                        confidently and save time while discovering what matters most.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+
+        <div class="contact" id="contact">
+
+            <div class="contactus">
+                <h1>#Let's Connect</h1>
+                <p>Discover the best deals, trusted product recommendations, and exclusive offers—curated just for you.
+                    Shop smarter and enjoy quality with every click.</p>
+            </div>
+
+            <div class="contactMe">
+                <div class="contactText">
+                    <h1>Contact Us </h1>
+                    <p>Contact : khanrihanrk19@gmail.com</p>
+                    <p>Number : 999999000011</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Letter -->
+
+        <div class="letter">
+            <div class="letterText">
+                <h1>Stay Updated with the Latest Deals</h1>
+                <p>We’d love to hear from you! Have questions, suggestions, or <br> feedback? Get in touch with us
+                    anytime.</p>
+            </div>
+            <div class="inp">
+                <input type="text" placeholder="Enter Email">
+                <button>Sign Up</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="footer">
+            <p>© 2025 ReviewVine. All Rights Reserved.</p>
+        </div>
+        <script src="script.js"></script>
 </body>
 
 </html>
-
