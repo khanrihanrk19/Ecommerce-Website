@@ -1,508 +1,436 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #eeee;
-
+  background-color: #eee;
+  overflow-x: hidden;
 }
 
+/* Navbar */
 nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: #eeee;
-    padding: 17px;
-    box-shadow: 0px 2px 2px 2px rgb(162, 162, 162);
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  padding: 17px;
+  box-shadow: 0px 2px 2px 2px rgb(162, 162, 162);
+  flex-wrap: wrap;
 }
-
 nav .logo {
-    margin-left: 22px;
-    font-size: 24px;
+  margin-left: 22px;
+  font-size: 24px;
 }
-
-ul {
-    margin-right: 45px;
-    margin-top: 7px;
-    font-weight: bold;
+nav ul {
+  margin-right: 45px;
+  margin-top: 7px;
+  font-weight: bold;
 }
-
 nav ul li {
-    list-style: none;
+  list-style: none;
+}
+nav ul li a {
+  margin-inline: 22px;
+  font-size: 20px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+nav ul li i {
+  font-size: 22px;
+}
+nav ul li i:hover {
+  color: gray;
+  cursor: pointer;
+}
+nav ul li #home {
+  color: rgb(5, 167, 167);
 }
 
-ul li a {
-    margin-inline: 22px;
-    font-size: 20px;
-}
-
-ul li i {
-    font-size: 22px;
-}
-
-ul li #home {
-    color: rgb(5, 167, 167);
-}
-
-ul li a:hover {
-    border-bottom: 2px solid black;
-    cursor: pointer;
-}
-
-ul li i:hover {
-    color: gray;
-    cursor: pointer;
-}
-
+/* Main Section */
 .main {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
 .main img {
-    height: 600px;
-    width: 600px;
-    object-fit: contain;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
-
-
 .main .mainText {
-    margin-top: 144px;
-
+  margin-top: 50px;
+  max-width: 600px;
+}
+.main .mainText h1 {
+  font-size: 48px;
+}
+.main .mainText h1.top {
+  color: rgb(33, 4, 138);
+}
+.main .mainText p {
+  margin-top: 12px;
+}
+.main .mainText button {
+  width: 145px;
+  height: 40px;
+  background-color: rgb(29, 4, 140);
+  border: none;
+  font-size: 22px;
+  color: white;
+  margin-top: 24px;
+  cursor: pointer;
+}
+.main .mainText button:hover {
+  border: 3px solid rgb(3, 128, 128);
+  background-color: transparent;
+  color: rgb(2, 121, 121);
 }
 
-.mainText h1 {
-    font-size: 64px;
-
-}
-
-.mainText .top {
-    color: rgb(33, 4, 138);
-}
-
-.mainText button {
-    width: 145px;
-    height: 40px;
-    background-color: rgb(29, 4, 140);
-    border: none;
-    font-size: 22px;
-    color: white;
-    margin-top: 24px;
-}
-
-.mainText p {
-    margin-top: 12px;
-}
-
-.mainText button:hover {
-    border: 3px solid rgb(3, 128, 128);
-    background-color: transparent;
-    color: rgb(2, 121, 121);
-}
-
-
-
+/* Headings */
 .head h1 {
-    text-align: center;
-    padding: 33px;
-    margin-top: 32px;
+  text-align: center;
+  padding: 33px;
+  margin-top: 32px;
 }
-
 .head span {
-    color: rgb(2, 164, 164);
+  color: rgb(2, 164, 164);
 }
 
+/* Card */
 .card {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
 .card .crd {
-    width: 300px;
-    height: 500px;
-    background-color: #fff;
-    margin-inline: 11px;
-
+  width: 300px;
+  height: 420px;
+  background-color: #fff;
+  margin-inline: 11px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+.card .crd img {
+  width: 100%;
+  height: 280px;
+  padding: 22px;
+  border-radius: 31px;
+  align-items: center;
+}
+.card .crd .crdText {
+  margin-left: 16px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+.card .crd .crdText button {
+  width: 110px;
+  height: 33px;
+  border: none;
+  background-color: rgb(5, 141, 141);
+  color: white;
+  font-size: 19px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.card .crd .crdText i {
+  color: rgb(255, 149, 0);
 }
 
-.crd img {
-    width: 85%;
-    padding: 22px;
-    border-radius: 31px;
-
+/* Product Detail Popup */
+.product-detail-box {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 600px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+.product-detail-box img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.product-detail-box button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: teal;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product-detail-box .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.crdText {
-    margin-left: 16px;
-    padding: 8px;
+/* Blogs */
+.cardb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
-
-.crdText button {
-    width: 110px;
-    height: 33px;
-    border: none;
-    background-color: rgb(5, 141, 141);
-    color: white;
-    font-size: 19px;
-    margin-top: 11px;
-}
-
-.crdText i {
-    color: rgb(255, 149, 0);
-}
-
 .blog {
-    display: flex;
-    justify-content: center;
-    width: 500px;
-    height: 300px;
-    background-color: #fff;
-    margin-inline: 22px;
-    border-radius: 11px;
-
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #fff;
+  border-radius: 11px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+  box-sizing: border-box;
 }
-
-.blog:hover {
-    transition: 0.6s ease;
-    width: 520px;
-    height: 320px;
-}
-
 .blog img {
-    padding: 22px;
-    width: 85%;
+  height: 280px;
+  width: 240px;
+  object-fit: cover;
+  border-radius: 10px;
 }
-
 .blogText {
-    padding: 12px;
-    margin-top: 33px;
+  flex: 1;
+}
+.blogText h2 {
+  margin: 0 0 10px 0;
+  color: teal;
+}
+.blogText p {
+  line-height: 1.5;
+  color: #333;
+}
+.blogText button {
+  margin-top: 12px;
+  padding: 10px 18px;
+  background: teal;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.blogText button:hover {
+  background: #111;
 }
 
-.blogText a {
-    width: 130px;
-    padding: 4px;
-    height: 18px;
-    background-color: rgb(4, 136, 136);
-    color: white;
-    font-size: 18px;
-    border-radius: 5px;
-    position: relative;
-    top: 33px;
-}
-
-.letter {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    background-color: rgb(2, 2, 66);
-    padding: 43px;
-}
-
-.inp {
-    display: flex;
-}
-
-.inp input {
-    width: 330px;
-    height: 33px;
-    outline: none;
-    font-size: 18px;
-    border: none;
-}
-
-.inp button {
-    width: 100px;
-    height: 33px;
-    background-color: rgb(2, 173, 173);
-    color: white;
-    border: none;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    padding: 53px;
-}
-
-.footer .footerText {
-    margin-inline: 85px;
-}
-
-.footerText p {
-    margin-top: 11px;
-}
-
-/* about */
+/* About */
 .about {
-    display: none;
+  display: none;
 }
-
 .aboutus {
-    background-color: rgb(1, 1, 42);
-    color: white;
-    padding: 56px;
-    font-size: 19px;
+  background-color: rgb(1, 1, 42);
+  color: white;
+  padding: 56px;
+  font-size: 19px;
 }
-
 .me {
-    display: flex;
-    justify-content: center;
-    width: 700px;
-    background-color: #fff;
-    padding: 33px;
-    margin-left: 18%;
-    margin-top: 7%;
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  background-color: #fff;
+  padding: 33px;
+  margin-left: 18%;
+  margin-top: 7%;
 }
-
 .me img {
-    width: 54%;
+  width: 54%;
 }
 
-/* /contact */
-
+/* Contact */
 .contact {
-    display: none;
+  display: none;
 }
-
 .contactus {
-    background-color: rgb(1, 1, 42);
-    color: white;
-    padding: 56px;
-    font-size: 19px;
+  background-color: rgb(1, 1, 42);
+  color: white;
+  padding: 56px;
+  font-size: 19px;
 }
-
 .contactMe {
-    display: flex;
-    justify-content: center;
-    width: 1000px;
-    margin-top: 5%;
-    background-color: #fff;
-    margin-left: 10%;
-
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  background-color: #fff;
 }
-
 .contactMe img {
-    width: 55%;
+  width: 55%;
 }
-
 .contactText {
-    padding: 22px;
-    width: 600px;
+  padding: 22px;
+  width: 600px;
 }
-
 .contactText p {
-    margin-top: 12px;
+  margin-top: 12px;
 }
 
-.form {
-    text-align: center;
-    margin-top: 5%;
-    padding: 22px;
+/* Newsletter */
+.letter {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: rgb(14, 14, 72);
+  padding: 43px;
+}
+.letter .inp {
+  display: flex;
+}
+.letter .inp input {
+  width: 330px;
+  height: 33px;
+  outline: none;
+  font-size: 18px;
+  border: none;
+}
+.letter .inp button {
+  width: 100px;
+  height: 33px;
+  background-color: rgb(2, 173, 173);
+  color: white;
+  border: none;
 }
 
-.form input {
-    width: 300px;
-    padding: 5px;
-    height: 27px;
-    margin-top: 11px;
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 25px;
+  background: #222;
+  color: #fff;
+  font-size: 14px;
 }
 
-.form button {
-    width: 300px;
-    height: 36px;
-    background-color: rgb(2, 54, 54);
-    color: white;
-    font-size: 22px;
-    border: none;
-    margin-top: 22px;
-
-}
-
-/* cart */
-
-.cart {
-    display: flex;
-    justify-content: center;
-    display: none;
-
-}
-
-.cartText {
-    padding: 22px;
-    margin-top: 22px;
-}
-
-.cartText p {
-    margin-top: 12px;
-}
-
-.cartText h2 {
-    margin-top: 11px;
-}
-
-.cartText .btn button {
-    width: 140px;
-    height: 40px;
-    background-color: rgb(255, 89, 0);
-    color: white;
-    border: none;
-    font-size: 22px;
-    margin-inline: 11px;
-    margin-top: 22px;
-}
-
-.cartText .back {
-    width: 140px;
-    height: 40px;
-    background-color: rgb(4, 81, 81);
-    color: white;
-    border: none;
-    font-size: 22px;
-    margin-inline: 11px;
-    margin-top: 22px;
-    margin-top: 22px;
-}
-
-/* ================= Responsive Design ================= */
-
-/* Tablet (max-width: 992px) */
+/* Responsive */
 @media (max-width: 992px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    ul {
-        margin: 10px 0;
-    }
-
-    .main {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .main .mainText {
-        margin-top: 60px;
-    }
-
-    .card {
-        flex-wrap: wrap;
-    }
-
-    .blog {
-        width: 90%;
-        height: auto;
-    }
-
-    .contactMe {
-        flex-direction: column;
-        width: 90%;
-        margin: 5% auto;
-    }
-
-    .contactMe img {
-        width: 100%;
-    }
-
-    .contactText {
-        width: 100%;
-        padding: 15px;
-    }
-
-    .me {
-        flex-direction: column;
-        width: 90%;
-        margin: 5% auto;
-    }
-
-    .me img {
-        width: 100%;
-    }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    margin: 10px 0;
+  }
+  .main {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .main .mainText {
+    margin-top: 60px;
+    align-items: center;
+  }
+  .card {
+    flex-wrap: wrap;
+  }
+  .blog {
+    width: 90%;
+    height: auto;
+  }
+  .contact .contactMe {
+    flex-direction: column;
+    width: 90%;
+    margin: 5% auto;
+  }
+  .contact .contactMe img {
+    width: 100%;
+  }
+  .contact .contactMe .contactText {
+    width: 100%;
+    padding: 15px;
+  }
+  .about .me {
+    flex-direction: column;
+    width: 90%;
+    margin: 5% auto;
+  }
+  .about .me img {
+    width: 100%;
+  }
 }
 
-/* Mobile (max-width: 600px) */
 @media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    nav .logo {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    ul li a {
-        margin-inline: 10px;
-        font-size: 16px;
-    }
-
-    .mainText h1 {
-        font-size: 36px;
-    }
-
-    .mainText button {
-        width: 120px;
-        height: 36px;
-        font-size: 18px;
-    }
-
-    .card {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card .crd {
-        width: 90%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    .blog {
-        flex-direction: column;
-        align-items: center;
-        width: 95%;
-        height: auto;
-    }
-
-    .letter {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .inp {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .inp input {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .inp button {
-        width: 100%;
-    }
-
-    .footer {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer .footerText {
-        margin: 15px 0;
-    }
-
-    .form input,
-    .form button {
-        width: 90%;
-    }
-
-    .cartText .btn button,
-    .cartText .back {
-        width: 90%;
-        margin: 10px 0;
-    }
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+  nav .logo {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  ul li a {
+    margin-inline: 10px;
+    font-size: 16px;
+  }
+  .mainText h1 {
+    font-size: 36px;
+  }
+  .mainText button {
+    width: 120px;
+    height: 36px;
+    font-size: 18px;
+  }
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card .crd {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .blog {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    height: auto;
+  }
+  .letter {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .letter .inp {
+    flex-direction: column;
+    width: 100%;
+  }
+  .letter .inp input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .letter .inp button {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer .footerText {
+    margin: 15px 0;
+  }
+  .contact .form input,
+  .contact .form button {
+    width: 90%;
+  }
 }
