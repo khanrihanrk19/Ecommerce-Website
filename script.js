@@ -1,119 +1,120 @@
-
-
-let card = document.querySelector(".trend");
-let card2 = document.getElementById("trendSec");
-let about = document.querySelector(".about");
-let contact = document.querySelector(".contact");
-
-
-console.log(card);
-let blog = document.querySelector(".trends");
+const card = document.querySelector(".trend");
+const card2 = document.getElementById("trendSec");
+const about = document.querySelector(".about");
+const contact = document.querySelector(".contact");
 let mainPage = document.querySelector(".main");
 
-function homes(){
-    mainPage.style.display="flex";
-    card.style.display="block";
-    card2.style.display="block";
-    blog.style.display="block";
-   about.style.display="none"
+// By default hide about & contact
+about.style.display = "none";
+contact.style.display = "none";
 
+// Section Controller
+function homes() {
+  about.style.display = "none";
+  contact.style.display = "none";
 
-    
-document.getElementById("blog").style.color="black";
-document.getElementById("home").style.color="rgb(2, 173, 173)";
-document.getElementById("shop").style.color="black";
-document.getElementById("contact").style.color="black";
-document.getElementById("about").style.color="black"
-
-
-}
-function shops(){
-mainPage.style.display="none";
-blog.style.display="none";
-about.style.display="none"
-card.style.display="block";
-card2.style.display="block";
-
- 
-document.getElementById("blog").style.color="black";
-document.getElementById("home").style.color="black";
-document.getElementById("shop").style.color="rgb(2, 173, 173)";
-document.getElementById("contact").style.color="black";
-document.getElementById("about").style.color="black"
-
-
+  document.getElementById("home").style.color = "rgb(2, 173, 173)";
+  document.getElementById("about").style.color = "black";
+  document.getElementById("contact").style.color = "black";
+  document.getElementById("shop").style.color = "black";
+  document.getElementById("blog").style.color = "black";
 }
 
-function blogs(){
-    mainPage.style.display="none";
-    card.style.display="none";
-    card2.style.display="none";
-   blog.style.display="block";
-   about.style.display="none"
-    
+function shops() {
+  about.style.display = "none";
+  contact.style.display = "none";
 
-document.getElementById("blog").style.color="rgb(2, 173, 173)";
-document.getElementById("home").style.color="black";
-document.getElementById("shop").style.color="black";
-document.getElementById("contact").style.color="black";
-document.getElementById("about").style.color="black"
-
- 
-
-
-
+  document.getElementById("shop").style.color = "rgb(2, 173, 173)";
+  document.getElementById("home").style.color = "black";
+  document.getElementById("about").style.color = "black";
+  document.getElementById("contact").style.color = "black";
+  document.getElementById("blog").style.color = "black";
 }
 
-function abouts(){
-    mainPage.style.display="none";
-    card.style.display="none";
-    card2.style.display="none";
-   blog.style.display="none";
-   about.style.display="block"
+function blogsSection() {
+  about.style.display = "none";
+  contact.style.display = "none";
 
-document.getElementById("blog").style.color="black";
-document.getElementById("home").style.color="black";
-document.getElementById("shop").style.color="black";
-document.getElementById("contact").style.color="black";
-document.getElementById("about").style.color="rgb(2, 173, 173)"
-
+  document.getElementById("blog").style.color = "rgb(2, 173, 173)";
+  document.getElementById("home").style.color = "black";
+  document.getElementById("shop").style.color = "black";
+  document.getElementById("about").style.color = "black";
+  document.getElementById("contact").style.color = "black";
 }
 
-function contacts(){
-    mainPage.style.display="none";
-    card.style.display="none";
-    card2.style.display="none";
-   blog.style.display="none";
-   about.style.display="none";
-   contact.style.display="block"
+function abouts() {
+  about.style.display = "block";
+  contact.style.display = "none";
 
-document.getElementById("blog").style.color="black";
-document.getElementById("home").style.color="black";
-document.getElementById("shop").style.color="black";
-document.getElementById("contact").style.color="black";
-document.getElementById("about").style.color="black"
-document.getElementById("contact").style.color="rgb(2, 173, 173)"
-
+  document.getElementById("about").style.color = "rgb(2, 173, 173)";
+  document.getElementById("home").style.color = "black";
+  document.getElementById("shop").style.color = "black";
+  document.getElementById("blog").style.color = "black";
+  document.getElementById("contact").style.color = "black";
 }
 
-// cart
+function contacts() {
+  about.style.display = "none";
+  contact.style.display = "block";
 
-function show(img){
+  document.getElementById("contact").style.color = "rgb(2, 173, 173)";
+  document.getElementById("home").style.color = "black";
+  document.getElementById("shop").style.color = "black";
+  document.getElementById("blog").style.color = "black";
+  document.getElementById("about").style.color = "black";
+}
+
+// Smooth scroll helper
+function scrollToSection(id) {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+// Product Popup
+const productPopup = {
+  show(img, title, shortDesc, fullDesc, link) {
+    document.getElementById("detailImg").src = img;
+    document.getElementById("detailTitle").innerText = title;
+    document.getElementById("detailShortDesc").innerText = shortDesc;
+    document.getElementById("detailFullDesc").innerText = fullDesc;
+    document.getElementById("detailLink").href = link;
+    document.getElementById("detailShortDesc").innerHTML = shortDesc;
+
+    document.getElementById("productDetailBox").style.display = "block";
+  },
+
+  close() {
+    document.getElementById("productDetailBox").style.display = "none";
+  }
+};
+
+// Cart
+const cartControl = {
+  show(img) {
     let newImg = document.getElementById("newImg");
     console.log(img);
-    newImg.src=img.src;
+    newImg.src = img.src;
 
-    mainPage.style.display="none";
-    card.style.display="none";
-    card2.style.display="none";
-   blog.style.display="none";
-   about.style.display="none";
-   contact.style.display="none"
-    document.querySelector(".cart").style.display="flex"
+    mainPage.style.display = "none";
+    card.style.display = "none";
+    card2.style.display = "none";
+    about.style.display = "none";
+    contact.style.display = "none";
+    document.querySelector(".cart").style.display = "flex";
+  },
+
+  add() {
+    alert("Added To Cart");
+    location.reload();
+  }
+};
+
+function showProduct(img, title, shortDesc, fullDesc, link) {
+  productPopup.show(img, title, shortDesc, fullDesc, link);
 }
 
-
-function addCart(){
-    alert("Added To Cart");
-    location.reload()
+function closeProduct() {
+  productPopup.close();
 }
