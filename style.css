@@ -315,18 +315,18 @@ nav ul li #home {
 }
 
 .site-footer {
-  background-color: #222;   /* Dark background */
-  color: #fff;              /* White text */
-  text-align: center;       /* Center align text */
-  padding: 20px;            /* Space inside footer */
+  background-color: #222;   
+  color: #fff;              
+  text-align: center;       
+  padding: 20px;            
   font-size: 14px;          
 }
 
 .site-footer .disclosure {
-  font-style: italic;       /* Italic style for disclosure */
-  font-size: 13px;          /* Slightly smaller text */
-  margin-top: 10px;         /* Space above disclosure */
-  color: #ccc;              /* Light gray text */
+  font-style: italic;       
+  font-size: 13px;         
+  margin-top: 10px;         
+  color: #ccc;              
 }
 
 /* Responsive */
@@ -440,5 +440,6 @@ nav ul li #home {
     width: 90%;
   }
 }
+
 
 
